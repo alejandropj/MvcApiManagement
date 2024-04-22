@@ -25,6 +25,7 @@ namespace MvcApiManagement.Services
         {
             using(HttpClient client = new HttpClient())
             {
+
                 var queryString = HttpUtility.ParseQueryString(string.Empty);
                 string request = "data?" + queryString;
                 client.DefaultRequestHeaders.Clear();
